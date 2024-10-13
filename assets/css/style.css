@@ -1,0 +1,84 @@
+html{
+    height: 100%;
+}
+
+@font-face{
+    font-family: "Verdana";
+    src: url(../fonts/Verdana.ttf);
+}
+
+@font-face{
+    font-family: "Verdana Bold";
+    src: url(../fonts/verdanab.ttf);
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.hero_section {
+    width: 100%;
+    height: 100%; /* Esto hace que coja el 100% del alto del padre que en este caso es el body que a su vez lo coje del html que a su vez lo coje del document */
+    display: flex; 
+    flex-direction: column;
+    background-image: url(/assets/imgs/herosection_img.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 1270px;
+}
+
+.main_nav ul{
+    width: 400px;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.main_nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul,p,a{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home_content{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    padding-left: 7rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.home_content p{
+    font-size: 24pt;
+    font-style: italic;
+}
+
+.home_content a{
+    text-decoration: none;
+    background-color: #2F343D;
+    border: 1px solid white;
+    width: 185px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+
+.home_content a:hover{
+    color: #2a4880;
+}
