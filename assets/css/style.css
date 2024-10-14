@@ -82,3 +82,143 @@ ul,p,a{
 .home_content a:hover{
     color: #2a4880;
 }
+
+
+.mybio_section{
+    width: 100%;
+    height:320vh;
+    background-color: #41464E;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mybio_section h1, h3 {
+    color: white;
+}
+
+.mybio_section h3{
+    text-align: center;
+}
+
+.mybio_section h1, .album_section h1{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.bio_content1, .bio_content2, .bio_content3, .bio_content4{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.bio_content2, .bio_content3, .bio_content4{
+    margin-top: 4rem;
+}
+
+
+.album_section{
+    width: 100%;
+    height: 100%;
+    background-color: #1A1A1A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.albums{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact_section{
+    background-color: #1A1A1A;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_section h1{
+    color: white;
+}
+
+
+footer{
+    background-color: #373B40;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+.contact_form input{
+    box-sizing: border-box;
+    width: 600px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.name, .email, .subject{
+    height: 30px;
+}
+
+.message{
+    height: 200px;
+    box-sizing: border-box;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    width: 600px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    resize: none;
+}
+
+
+.submit_button{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.submit_button a{
+    box-sizing: border-box;
+    margin-right: 1rem;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.submit_button a:hover{
+    color: #2a4880;
+}
+
+.social_logos{
+    display: flex;
+    justify-content: space-evenly;
+}
