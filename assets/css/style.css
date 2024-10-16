@@ -52,6 +52,7 @@ header {
 
 .main_nav ul a{
     text-decoration: none;
+    font-size: 1rem;
 }
 
 .main_nav ul a:hover{
@@ -398,6 +399,15 @@ footer ul {
     justify-content: space-evenly;
 }
 
+.social_logos a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.social_logos a:hover{
+    color: #2a4880!important;
+}
+
 .replication_links{
     font-size: 1.5rem;
 }
@@ -415,4 +425,7 @@ footer ul {
     width: 40px;
     height: 40px;     
 }
+
+
+
 
