@@ -1,42 +1,61 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Artifika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html {
     height: 100%;
 }
 
-@font-face{
-    font-family: "Verdana";
-    src: url(../fonts/Verdana.ttf);
-}
 
-@font-face{
-    font-family: "Verdana Bold";
-    src: url(../fonts/verdanab.ttf);
-}
 
 body {
     margin: 0;
     height: 100%;
 }
 
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+
+h1{
+    font-size: 2.5rem;
+}
+/*...............................................................HERO SECTION......................................................................*/
+
 .hero_section {
     width: 100%;
-    height: 100%; /* Esto hace que coja el 100% del alto del padre que en este caso es el body que a su vez lo coje del html que a su vez lo coje del document */
-    display: flex; 
+    height: 100%;
+    /* Esto hace que coja el 100% del alto del padre que en este caso es el body que a su vez lo coje del html que a su vez lo coje del document */
+    display: flex;
     flex-direction: column;
     background-image: url(/assets/imgs/herosection_img.webp);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
+
 }
 
-header{
-    width: 1270px;
+header {
+    width:84%;
+
 }
 
-.main_nav ul{
-    width: 400px;
+.main_nav ul {
+    margin-top: 2rem;
+    width: 32rem;
     display: flex;
     list-style-type: none;
     justify-content: space-around;
+}
+
+.main_nav ul a{
+    text-decoration: none;
+}
+
+.main_nav ul a:hover{
+    color: #2a4880;
 }
 
 .main_nav {
@@ -44,14 +63,16 @@ header{
     justify-content: flex-end;
 }
 
-ul,p,a{
+ul,
+p,
+a {
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Montserrat";
 }
 
-.home_content{
+.home_content {
     display: flex;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     width: 30%;
@@ -60,12 +81,14 @@ ul,p,a{
     text-align: center;
 }
 
-.home_content p{
+.home_content p {
+    margin-top: 0;
     font-size: 24pt;
+    font-family: "Artifika";
     font-style: italic;
 }
 
-.home_content a{
+.home_content a {
     text-decoration: none;
     background-color: #2F343D;
     border: 1px solid white;
@@ -79,49 +102,71 @@ ul,p,a{
 }
 
 
-.home_content a:hover{
+.home_content a:hover {
     color: #2a4880;
 }
 
+/*...............................................................BIO SECTION......................................................................*/
 
-.mybio_section{
+.mybio_section {
     width: 100%;
-    height:320vh;
+    height: 320vh;
     background-color: #41464E;
     display: flex;
     flex-direction: column;
-
-}
-
-.mybio_section h1, h3 {
     color: white;
+
 }
 
-.mybio_section h3{
+.mybio_section h3 {
     text-align: center;
 }
 
-.mybio_section h1, .album_section h1{
+.mybio_section h1,
+.album_section h1 {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
 
-.bio_content1, .bio_content2, .bio_content3, .bio_content4{
+.bio_content1,
+.bio_content2,
+.bio_content3,
+.bio_content4 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-
-.bio_content2, .bio_content3, .bio_content4{
-    margin-top: 4rem;
+.bio_text{
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.album_section{
+.bio_text{
+    font-size: 1.2rem;
+}
+
+.bio_content1 image{
+    width: 50%;
+}
+
+
+.bio_content2,
+.bio_content3,
+.bio_content4 {
+    margin-top: 4rem;
+}
+
+/*...............................................................ALBUMS SECTION......................................................................*/
+
+.album_section {
     width: 100%;
-    height: 100%;
+    height: 185vh;
     background-color: #1A1A1A;
     color: white;
     display: flex;
@@ -129,15 +174,86 @@ ul,p,a{
     align-items: center;
 }
 
-.albums{
+.album_section h1 {
+    margin-top: 4rem;
+}
+
+.albums {
     width: 100%;
-    height: 100%;
+    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.contact_section{
+
+.top_songs {
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.top_songs p {
+    flex-basis: 40%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: "Aclonica";
+}
+
+
+.top_songs iframe {
+    flex-basis: 45%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.single-album{
+    width: 28%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.single-album a{
+    text-decoration: none;
+    margin-top: 2rem;
+    background-color: #41464E;
+    color: white;
+    font-family: "Montserrat";
+    width: 80%;
+    text-align: center;
+    height: 3rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-album a:hover{
+    background: white;
+    color: #2a4880;
+}
+
+
+/*..............................................................TOURS SECTION..........................................................*/
+
+
+
+
+/*..............................................................CONTACT SECTION......................................................................*/
+
+.contact_section {
     background-color: #1A1A1A;
     box-sizing: border-box;
     width: 100%;
@@ -149,36 +265,24 @@ ul,p,a{
     align-items: center;
 }
 
-.contact_section h1{
+.contact_section h1 {
     color: white;
 }
 
-
-footer{
-    background-color: #373B40;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem 0;
-    box-sizing: border-box;
-}
-
-footer ul{
-    list-style-type: none;
-}
-
-.contact_form input{
+.contact_form input {
     box-sizing: border-box;
     width: 600px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.name, .email, .subject{
+.name,
+.email,
+.subject {
     height: 30px;
 }
 
-.message{
+.message {
     height: 200px;
     box-sizing: border-box;
     padding-top: 0.5rem;
@@ -190,14 +294,14 @@ footer ul{
 }
 
 
-.submit_button{
+.submit_button {
     box-sizing: border-box;
     width: 100%;
     display: flex;
     justify-content: end;
 }
 
-.submit_button a{
+.submit_button a {
     box-sizing: border-box;
     margin-right: 1rem;
     text-decoration: none;
@@ -210,15 +314,31 @@ footer ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
-.submit_button a:hover{
+.submit_button a:hover {
     color: #2a4880;
 }
 
-.social_logos{
+/*...............................................................FOOTER......................................................................*/
+
+footer {
+    background-color: #373B40;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.social_logos {
     display: flex;
     justify-content: space-evenly;
 }
