@@ -29,7 +29,7 @@ h1{
     /* Esto hace que coja el 100% del alto del padre que en este caso es el body que a su vez lo coje del html que a su vez lo coje del document */
     display: flex;
     flex-direction: column;
-    background-image: url(/assets/imgs/herosection_img.webp);
+    background-image: url(../imgs/herosection_img.webp);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
